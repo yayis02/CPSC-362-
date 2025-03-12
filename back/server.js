@@ -9,7 +9,6 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// Mock API Endpoints
 app.get('/api/fire-risk', async (req, res) => {
     res.json({ message: "Fire risk data (mock)" });
 });
