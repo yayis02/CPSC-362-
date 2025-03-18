@@ -48,15 +48,19 @@ body {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
-  font-family: 'Roboto', sans-serif;  /* Use a modern sans-serif font for the navbar */
-  font-weight: 500;  /* Make the font a bit bolder */
-  transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition */
-  padding: 0.5rem 1rem;  /* Adds space around the links */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  gap: 8px; /* Space between the icon and text */
 }
 
+/* Hover effect for links */
 .navbar nav ul li a:hover {
-  color: #d96c0f;  /* Wildfire color when hovering */
-  transform: scale(1.1);  /* Slight zoom effect on hover */
+  color: #d96c0f;
+  transform: scale(1.1);
 }
 
 /* Style for the background video */
@@ -113,6 +117,7 @@ h1 {
   position: cover;
 }
 
+
 /* Fade-in animation for title */
 @keyframes fadeIn {
   from {
@@ -122,3 +127,163 @@ h1 {
     opacity: 1;
   }
 }
+
+/* Section Styling */
+.about, .why-safety, .mission {
+  background-color: white;
+  padding: 40px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Ensure each section has a border and some margin */
+#about h2, #why-safety h2, #mission h2 {
+  font-size: 2rem;
+  color: #d96c0f;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#about p, #why-safety p, #mission p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  font-weight: 400;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer Styling */
+.footer {
+  position: fixed; /* Fixed position to keep it at the bottom */
+  bottom: 10px; /* 10px from the bottom */
+  left: 10px; /* 10px from the left */
+  color: white; /* White text */
+  font-size: 0.9rem; /* Smaller font size */
+  font-family: 'Roboto', sans-serif; /* Match existing font */
+  z-index: 10; /* Ensure it is on top of other content */
+}
+
+/* Search Section Styling */
+.search {
+  text-align: center;
+  margin-top: 100px; /* Make sure it doesn't overlap other sections */
+}
+
+.search h2 {
+  font-size: 2rem;
+  color: #d96c0f;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.search p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #d96c0f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #ff7f00;
+}
+
+.shelter-results {
+  margin-top: 20px;
+}
+
+.shelter-results ul {
+  list-style: none;
+  padding: 0;
+}
+
+.shelter-results li {
+  background-color: #f8f8f8;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.shelter-results h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.shelter-results p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Styling for Locate Section */
+.locate {
+  padding: 60px 20px;  /* Add more padding for a better look */
+  background-color: #fff;  /* Light background for contrast */
+  border-radius: 8px;  /* Smooth corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Light shadow for depth */
+  text-align: center;  /* Center the text */
+  margin-top: 60px;  /* Ensure it's below the other sections */
+}
+
+/* Title Styling for Locate Section */
+.locate-title {
+  font-size: 2.5rem;  /* Larger title */
+  color: #d96c0f;  /* Wildfire orange, matching your brand */
+  font-weight: 700;  /* Bold for importance */
+  margin-bottom: 20px;  /* Space below the title */
+  text-transform: uppercase;  /* Uppercase for emphasis */
+  letter-spacing: 2px;  /* Add some spacing between letters */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);  /* Subtle shadow */
+}
+
+/* Description Styling for Locate Section */
+.locate-description {
+  font-size: 1.2rem;  /* Slightly larger than normal text */
+  color: #333;  /* Dark color for readability */
+  font-weight: 400;
+  line-height: 1.6;  /* Improved line spacing for readability */
+  margin-bottom: 30px;  /* Add space below description */
+  max-width: 800px;  /* Limit the width for better layout */
+  margin-left: auto;
+  margin-right: auto;  /* Center align the description */
+}
+
+/* Map container styling for Locate Section */
+.map-container {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgba(0, 255, 0, 0.3); /* Greenish background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow to map container */
+}
+
+
+@import url('https://unpkg.com/leaflet@1.7.1/dist/leaflet.css');
