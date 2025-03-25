@@ -1,13 +1,10 @@
 import React from 'react';
 import Main from './components/Main';
-import Map from './components/Map';
-import './App.css';
 
 function App() {
   return (
-    <div className="app-container">
+    <div>
       <Main />
-      <Map />
     </div>
   );
 }
