@@ -37,15 +37,17 @@ const Main = () => {
     return () => clearInterval(wordChangeInterval);
   }, [words]);
 
-  const handleSearch = () => {
-    // For now, we'll simulate a search for food shelters
-    // In the future, replace this with actual API calls to get shelter locations based on the search query
-    setShelterResults([
-      { name: "Food Shelter 1", address: "123 Main St, City, CA" },
-      { name: "Food Shelter 2", address: "456 Elm St, City, CA" },
-      { name: "Food Shelter 3", address: "789 Oak St, City, CA" },
-    ]);
+  const handleSearch = async () => {
+    try {
+      const res = await fetch("http://localhost:5000/api/shelters");
+      const data = await res.json();
+      setShelterResults(data);
+    } catch (err) {
+      console.error("Error fetching shelters:", err);
+      setShelterResults([]);
+    }
   };
+  
 
   
 

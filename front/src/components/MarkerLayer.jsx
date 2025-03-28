@@ -1,4 +1,4 @@
-// src/components/MarkerLayer.jsx
+
 import React from 'react';
 import { Marker, Popup } from 'react-leaflet';
 
@@ -6,7 +6,7 @@ export default function MarkerLayer({ listings }) {
   return (
     <>
       {listings.map((item, idx) => {
-        // read lat/lon from listing.location.coordinate
+        // read lat/lon from listing.location.address.coordinate
         const lat = item.location?.address?.coordinate?.lat;
 const lon = item.location?.address?.coordinate?.lon;
 

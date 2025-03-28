@@ -54,7 +54,7 @@ export default function Map() {
       .catch(err => console.error("Real Estate fetch error:", err));
   }, []); 
 
-  // 2) Render the <MapContainer>, with layers for:
+  // Render the <MapContainer>, with layers for:
   //  - Wildfire GeoJSON
   //  - Markers
   //  - FitBounds logic
