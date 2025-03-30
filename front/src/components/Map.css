@@ -8,4 +8,24 @@
     border-radius: 10px; 
     overflow: hidden; 
     background-color: rgba(0, 255, 0, 0.3);
+    position: relative;
+    z-index: 10;
 }
+
+.leaflet-control.legend {
+  background: white;
+  padding: 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  line-height: 1.5;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000; /* force on top */
+}
+
+  
+  
+.leaflet-control.legend h4 {
+    margin: 0 0 5px;
+    font-size: 1rem;
+    font-weight: bold;
+  }

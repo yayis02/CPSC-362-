@@ -107,7 +107,7 @@ const Main = () => {
       <section id="locate" className="locate" data-aos="fade-up">
         <h2>Locate Wildfire Zones</h2>
         <p>Explore the areas known to be prone to wildfires. Stay informed and stay safe!</p>
-        <Map />
+        <Map shelters={shelterResults} />
       </section>
 
         
