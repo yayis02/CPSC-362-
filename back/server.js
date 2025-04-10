@@ -2,7 +2,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const port = 5000;
+const port = 5003;
 
 // Import the shelters route
 const sheltersRoute = require("./api/shelters");
